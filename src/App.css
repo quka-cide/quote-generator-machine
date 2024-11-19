@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url(design/background.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  background-color: rgba(223,	219,	229, 0.20);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.25);
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+.text {
+  font-size: 56px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  color: #364BA7;
+  padding: 20px;
+  margin-top: 20px;
+  width: 700px;
+  position: relative;
+
+}
+
+.text::after {
+  content: ""; /* Empty content to create the line */
+  position: absolute;
+  bottom: 0px; /* Adjust distance from the bottom of the container */
+  left: 50%;
+  transform: translateX(-50%); /* Center the line */
+  width: 80%; /* Set width of the border-bottom (adjust as needed) */
+  height: 1px; /* Thickness of the border */
+  background-color: #2a3b8f; /* Color of the border */
+}
+
+.author {
+  font-size: 48px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  color: #F583A7;
+  margin-top: 20px;
+}
+
+.footer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+button {
+  border: none;
+  width: 230px;
+  height: 85px;
+  background-color: #364BA7;
+  color: #F583A7;
+  border-radius: 10px;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #425bc7;
+}
