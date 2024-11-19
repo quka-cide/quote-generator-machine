@@ -34,20 +34,8 @@ body {
   color: #364BA7;
   padding: 20px;
   margin-top: 20px;
-  width: 700px;
-  position: relative;
-
-}
-
-.text::after {
-  content: ""; /* Empty content to create the line */
-  position: absolute;
-  bottom: 0px; /* Adjust distance from the bottom of the container */
-  left: 50%;
-  transform: translateX(-50%); /* Center the line */
-  width: 80%; /* Set width of the border-bottom (adjust as needed) */
-  height: 1px; /* Thickness of the border */
-  background-color: #2a3b8f; /* Color of the border */
+  width: 100%;
+  border-bottom: 1px solid #364BA7;
 }
 
 .author {
@@ -70,7 +58,6 @@ body {
 
 button {
   border: none;
-  width: 230px;
   height: 85px;
   background-color: #364BA7;
   color: #F583A7;
@@ -78,8 +65,23 @@ button {
   font-size: 36px;
   font-weight: bold;
   cursor: pointer;
+  padding: 10px 20px;
 }
 
 button:hover {
   background-color: #425bc7;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 500px;
+  }
+
+  .text {
+    font-size: 48px;
+  }
+
+  .author {
+    font-size: 30px;
+  }
 }
